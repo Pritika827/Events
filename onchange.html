@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+function xchange(e){
+
+	document.getElementById("demo").innerHTML=e.value
+}
+</script>
+</head>
+<body>
+<form>
+	<select id="batch" onchange="xchange(this)">
+		<option>Morning</option>
+				<option>Afternoon</option>
+		<option>Evening</option>
+
+	</select>
+	
+</form>
+<p id="demo"></p>
+</body>
+</html> 

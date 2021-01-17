@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+function xselect(txt){
+	st  = txt.selectionStart;
+	end = txt.selectionEnd;
+	str = txt.value.substring(st,end)
+	document.getElementById("demo").innerHTML= str
+}
+</script>
+</head>
+<body>
+<form>
+	Name: <input type="text" onselect="xselect(this)">
+</form>
+<p id="demo"></p>
+</body>
+</html> 

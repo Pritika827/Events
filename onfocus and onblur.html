@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+function xfocus(e) {
+  e.style.background = "lightyellow"
+  e.style.height = "30px"
+}
+
+function xblur(e){
+  e.style.background = "pink"
+  e.style.height = "30px"
+}
+</script>
+	Email id: <input type="text" onfocus="xfocus(this)" onblur="xblur(this)"><br><br>
+	Password: <input type="password" onfocus="xfocus(this)" onblur="xblur(this)">
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+function sub(e) {
+  alert("form submit")
+}
+
+function ereset(e){
+  
+  alert("form clear")
+}
+</script>
+<form method="post" onsubmit="sub()" onreset="ereset()">
+	Name: <input type="text"><br><br>
+	Gender: <input type="radio" value="g" name="male"/>Male
+			<input type="radio" value="g" name="female"/>Female
+<br><br>
+
+<input type="submit" value="Send">
+<input type="reset" value="Clear">
+</form>
+</body>
+</html> 
